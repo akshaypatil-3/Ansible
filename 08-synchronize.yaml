@@ -1,0 +1,7 @@
+- hosts: ServerB
+  tasks:
+    - name: Transfer file from ServerA to ServerB
+      synchronize:
+        src: /var/www/html/index.html.j2
+        dest: /tmp/
+      delegate_to: ServerA
