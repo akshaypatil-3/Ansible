@@ -6,4 +6,12 @@
       yum:
         name: httpd
         state: latest
-  
+    - name: installing tree and curl and wget
+      yum:
+      var: packages
+        packages: 
+          - tree
+          - curl
+          - wget
+        name: {{packages}}
+        state: latest
