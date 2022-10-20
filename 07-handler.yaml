@@ -15,5 +15,5 @@
     - name: restart_httpd
       service:
         name: httpd
-        status: restarted
+        state: restarted
         enable: true
