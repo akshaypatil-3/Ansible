@@ -15,5 +15,7 @@
   - name: file with new dir
     file:
       path: /home/ec2-user/vyanky/file.txt
-      state: touch
+      state:
+      - directory
+      - touch
       mode: '0644'
