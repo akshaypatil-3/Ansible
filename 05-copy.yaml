@@ -1,0 +1,7 @@
+- name: copy module
+  hosts: all
+  tasks: 
+    - name: copy ap.txt to another m/c 
+      copy:
+        source: ./ap.txt
+        dest: /tmp
