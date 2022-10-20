@@ -9,6 +9,7 @@
       template:
         src: ./index.html.j2
         dest: /var/www/html/
+        notify: restart_httpd
       
   handlers:
     - name: restart_httpd
