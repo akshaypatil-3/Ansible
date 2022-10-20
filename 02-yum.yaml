@@ -9,7 +9,7 @@
     - name: installing tree and curl and wget
       yum:
         name: "{{ packages }}"
-      
+        state: present
       vars: packages
         packages: 
         - tree
