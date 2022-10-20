@@ -1,0 +1,14 @@
+- name: file module
+  hosts: all
+  tasks:
+  - name: creating file and directory
+    file:
+      path: /home/ec2-user/my-files
+      state: touch
+      mode: u+rw,g-wx,o-rwx
+
+  - name: Create a directory if it does not exist
+    file:
+      path: /home/ec2-user/my-dir
+      state: directory
+      mode: '0755'
