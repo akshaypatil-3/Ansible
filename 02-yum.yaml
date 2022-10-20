@@ -10,7 +10,7 @@
       yum:
         name: "{{ packages }}"
         state: present
-      vars: packages
+      vars:
         packages: 
         - tree
         - curl
