@@ -3,7 +3,7 @@
   tasks:
   - name: creating file and directory
     file:
-      path: /home/ec2-user/my-files/
+      path: /home/ec2-user/my-files
       state: touch
       mode: u+rw,g-wx,o-rwx
 
