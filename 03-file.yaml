@@ -12,5 +12,5 @@
       path: /home/ec2-user/my-dir
       state: directory
       mode: '0755'
-  - name: file with new dir
+  
     
