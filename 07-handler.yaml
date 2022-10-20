@@ -1,14 +1,18 @@
 - name: handlers
   hosts: all
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+    - name: copy file
+      template:
+        src: ./index.html.j2
+        dest: /var/www/html/
+      
   handlers:
     - name: restart_httpd
       service:
         name: httpd
         status: restarted
         enable: true
-  tasks:
-    - name: install httpd
-      yum:
-        name: httpd
-        state: present
-        notify: restart_httpd
