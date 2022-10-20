@@ -12,6 +12,6 @@
       
       vars: packages
         packages: 
-          - tree
-          - curl
-          - wget
+        - tree
+        - curl
+        - wget
