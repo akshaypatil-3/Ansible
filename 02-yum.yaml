@@ -1,7 +1,9 @@
 - name: yum module
   hosts: all
+  become: true
   tasks:
     - name: installing httpd
       yum:
         name: httpd
         state: latest
+  
