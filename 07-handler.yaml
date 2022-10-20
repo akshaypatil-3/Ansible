@@ -1,0 +1,16 @@
+- name: handlers
+  hosts: all
+  tasks:
+    - name: my-handlers
+      handlers:
+        name: restart_httpd
+        service:
+          name: httpd
+          status: restarted
+          enable: true
+    
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+        notify: restart_httpd
