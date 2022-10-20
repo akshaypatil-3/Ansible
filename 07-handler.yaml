@@ -1,14 +1,12 @@
 - name: handlers
   hosts: all
+  handlers:
+    - name: restart_httpd
+      service:
+        name: httpd
+        status: restarted
+        enable: true
   tasks:
-    - name: my-handlers
-      handlers:
-      - name: restart_httpd
-        service:
-            name: httpd
-            status: restarted
-            enable: true
-      
     - name: install httpd
       yum:
         name: httpd
