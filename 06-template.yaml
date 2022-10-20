@@ -1,0 +1,7 @@
+- name: template module
+  hosts: all
+  tasks:
+    - name: jinja2 template
+      template:
+        src: ./index.html.j2 
+        dest: /opt/
