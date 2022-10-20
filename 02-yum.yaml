@@ -8,7 +8,7 @@
         state: latest
     - name: installing tree and curl and wget
       yum:
-      var: packages
+      vars: packages
         packages: 
           - tree
           - curl
