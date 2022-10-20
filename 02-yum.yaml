@@ -15,3 +15,10 @@
         - tree
         - curl
         - wget
+
+    - name: installing mariadb
+      yum:
+        name: 
+          - mariadb-client
+          - tomcat
+        state: latest
