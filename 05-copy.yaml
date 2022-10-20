@@ -3,5 +3,5 @@
   tasks: 
     - name: copy ap.txt to another m/c 
       copy:
-        source: ./ap.txt
+        src: ./ap.txt
         dest: /tmp
