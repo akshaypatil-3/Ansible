@@ -7,7 +7,7 @@
   vars_prompt:
     - name: URL
       prompt: please enter variable value
-      private: false
+      private: true
 
   tasks: 
     - name: printvariable
