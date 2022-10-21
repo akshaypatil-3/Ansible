@@ -4,6 +4,10 @@
   #   - "./file.var"
   # vars:
   #   URL: www.global-variable.com    #global-variable
+  vars_promt:
+    - name: URL
+      promt: please enter variable value
+
   tasks: 
     - name: print  variable
       debug: 
@@ -14,10 +18,7 @@
         URL: www.local-variable.com
       debug: 
         msg: "{{ URL }}"
-  vars_promt:
-    - name: URL
-      promt: please enter variable value
-
+  
     
 
     
