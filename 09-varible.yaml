@@ -1,7 +1,9 @@
 - name: variable 
   hosts: all
-  vars:
-    URL: www.global-variable.com    #global-variable
+  var_file: 
+    - "./file.var"
+  # vars:
+  #   URL: www.global-variable.com    #global-variable
   tasks: 
     - name: print global variable
       debug: 
