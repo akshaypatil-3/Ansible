@@ -1,4 +1,4 @@
-- name: variable 
+- name: variable file
   hosts: all
   # vars_files: 
   #   - "./file.var"
@@ -10,7 +10,7 @@
       private: false
 
   tasks: 
-    - name: print  variable
+    - name: printvariable
       debug: 
         msg: "{{ URL }}"
 
