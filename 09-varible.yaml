@@ -1,6 +1,6 @@
 - name: variable 
   hosts: all
-  var_file: 
+  vars_file: 
     - "./file.var"
   # vars:
   #   URL: www.global-variable.com    #global-variable
