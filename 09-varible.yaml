@@ -1,0 +1,14 @@
+- name: variable 
+  hosts: all
+  vars:
+    URL: www.global-variable.com    #global-variable
+  tasks: 
+    - name: print global variable
+      debug: 
+        msg: "{{ URl }}"
+
+    - name: print local variable
+      debug: 
+        msg: "{{ URL }}"
+
+    

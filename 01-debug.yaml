@@ -1,5 +1,5 @@
 - name : first playbook
-  hosts: all
+  hosts: webservers
   tasks:
     - name : print hello world 
       debug: 
