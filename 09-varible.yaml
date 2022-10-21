@@ -8,7 +8,10 @@
         msg: "{{ URL }}"
 
     - name: print local variable
+      vars: 
+        URL: www.local-variable.com
       debug: 
         msg: "{{ URL }}"
+      
 
     
