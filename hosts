@@ -1,12 +1,12 @@
 ServerA ansible_host=172.31.88.187
-ServerB ansible_host=172.31.94.17
+# ServerB ansible_host=172.31.94.17
 
-[webservers]
-ServerA ansible_host=172.31.88.187
-ServerB ansible_host=172.31.94.17
+# [webservers]
+# ServerA ansible_host=172.31.88.187
+# ServerB ansible_host=172.31.94.17
 
-[prod]
-ServerB ansible_host=172.31.94.17
+# [prod]
+# ServerB ansible_host=172.31.94.17
 
-[test]
-ServerA ansible_host=172.31.88.187
+# [test]
+# ServerA ansible_host=172.31.88.187
