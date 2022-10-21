@@ -6,7 +6,7 @@
   #   URL: www.global-variable.com    #global-variable
   vars_prompt:
     - name: URL
-      promt: please enter variable value
+      prompt: please enter variable value
       private: false
 
   tasks: 
