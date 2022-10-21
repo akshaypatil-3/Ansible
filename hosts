@@ -1,4 +1,5 @@
-ServerA ansible_host=172.31.88.187
+172.31.88.187
+# ServerA ansible_host=172.31.88.187
 # ServerB ansible_host=172.31.94.17
 
 # [webservers]
