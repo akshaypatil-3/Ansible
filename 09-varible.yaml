@@ -5,7 +5,7 @@
   tasks: 
     - name: print global variable
       debug: 
-        msg: "{{ URl }}"
+        msg: "{{ URL }}"
 
     - name: print local variable
       debug: 
