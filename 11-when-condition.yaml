@@ -7,7 +7,15 @@
       when: ansible_distribution == "Amazon"
       #when: ansible_distribution == "centos"
       #when: ansible_distribution == "Ubuntu"
-    - name: print os number with condition 
+
+    - name: print os number with "and" condition 
       debug: 
         msg: "this is my {{ ansible_distribution }} machine"
       when: ansible_distribution == "Amazon" and ansible_os_family == "RedHat"
+      #when: ansible_distribution == "Amazon" and ansible_os_family == "Debian"
+    
+    - name: print os number with or condition 
+      debug: 
+        msg: "this is my {{ ansible_distribution }} machine"
+      when: ansible_distribution == "Amazon" or ansible_os_family == "Debian"
+      #when: ansible_distribution == "Amazon" or ansible_os_family == "RedHat"
