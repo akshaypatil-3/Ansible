@@ -2,6 +2,6 @@
   hosts: all
   tasks:
     - neme: check java installed or not
-      shell: ps -elf | grep java
-      # shell: ps -elf | grep java |grep -v grep 
+      #shell: ps -elf | grep java   # it show error
+      shell: ps -elf | grep java |grep -v grep 
     
