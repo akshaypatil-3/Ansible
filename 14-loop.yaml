@@ -14,7 +14,7 @@
 
     - name: installing multiple packages at same time using loop
       yum:
-        name: "{{ packages }}"
+        name: "{{ item }}"
         state: present
       loop: 
         - "httpd"
