@@ -1,7 +1,7 @@
 - name: ignore error 
   hosts: all
   tasks:
-    - neme: check java installed or not
+    - name: check java installed or not
       #shell: ps -elf | grep java   # it show error
       shell: ps -elf | grep java |grep -v grep 
       ignore_errors: True
