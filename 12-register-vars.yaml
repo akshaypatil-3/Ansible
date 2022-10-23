@@ -9,3 +9,7 @@
     - name: print hostname
       debug:
         msg: "my machine name is {{ HOST }}"     
+
+    - name: print hostname
+      debug:
+        msg: "my machine name is {{ HOST.stdout }}" 
