@@ -1,0 +1,6 @@
+- name: Example for gathering fact
+  hosts: all
+  tasks:  
+    - name: print IP
+      debug:
+        msg: "{{ ansible_default_IPV4.address }}"
