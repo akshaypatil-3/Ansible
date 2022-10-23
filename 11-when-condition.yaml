@@ -3,7 +3,7 @@
   tasks:
     - name: print os number with condition 
       debug: 
-        msg: this is my {{ ansible_distribution }} machine
+        msg: this is my "{{ ansible_distribution }}" machine
         when: ansible_distribution == "Amazon"
      #  when: ansible_distribution == "Centos"
      #  when: ansible_distribution == "Ubuntu"
