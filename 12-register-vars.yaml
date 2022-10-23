@@ -1,0 +1,11 @@
+# pass the output of one task to another task as input buy register
+- name: register vars
+  hosts: all
+  tasks:
+    - name: collect hostname
+      shell: hostname
+      register: HOST 
+
+    - name: print hostname
+      debug:
+        msg: "my machine name is {{ HOST }}"     
