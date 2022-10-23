@@ -2,15 +2,15 @@
 - name: example of loop
   hosts: all
   tasks:
-    - name: print fruit name
-      debug:
-        msg: "{{ item }}"
+    # - name: print fruit name
+    #   debug:
+    #     msg: "{{ item }}"
 
-      loop:
-        - "banana"
-        - "apple"
-        - "mango"
-        - "strawberry "
+    #   loop:
+    #     - "banana"
+    #     - "apple"
+    #     - "mango"
+    #     - "strawberry "
 
     - name: installing multiple packages at same time using loop
       yum:
