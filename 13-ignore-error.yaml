@@ -4,4 +4,8 @@
     - neme: check java installed or not
       #shell: ps -elf | grep java   # it show error
       shell: ps -elf | grep java |grep -v grep 
+      ignore_error: true
     
+    - name: run java
+      debug: 
+        msg: "lets run tomcat"
