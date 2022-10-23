@@ -1,5 +1,7 @@
 - name: Example for gathering fact
   hosts: all
+# to disable gathering fact mension false by default true
+  gather_fats: false
   tasks:  
     - name: print IP
       debug:
