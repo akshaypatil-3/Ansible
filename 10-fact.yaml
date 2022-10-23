@@ -4,3 +4,7 @@
     - name: print IP
       debug:
         msg:  "{{ ansible_default_ipv4.address }}"
+    
+    - name: print os name
+      debug: 
+        msg: "{{ ansible_os_family }}"
