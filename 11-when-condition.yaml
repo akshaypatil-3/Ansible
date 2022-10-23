@@ -8,10 +8,6 @@
       when: ansible_distribution == "Amazon"
       #when: ansible_distribution == "centos"
       #when: ansible_distribution == "Ubuntu"
----
-- name: when condition with different operatior
-  hosts: all
-  tasks:
     - name: print os number with condition 
       debug: 
         msg: "this is my {{ ansible_distribution }} machine"
