@@ -10,4 +10,15 @@
         - "banana"
         - "apple"
         - "mango"
-        - "strawberry"
+        - "strawberry "
+
+    - name: installing multiple packages at same time using loop
+      yum:
+        name: "{{ packages }}"
+        state: present
+      loop: 
+        - "httpd"
+        - "tree"
+        - "wget"
+        - "curl"
+
