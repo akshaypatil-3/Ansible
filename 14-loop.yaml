@@ -1,0 +1,13 @@
+# loop is used to repeated the task no of time with the different value
+- name: example of loop
+  hosts: all
+  tasks:
+    - name: print fruit name
+      debug:
+        msg: "{{ item }}"
+
+      loop:
+        - "banana"
+        - "apple"
+        - "mango"
+        - "strawberry"
