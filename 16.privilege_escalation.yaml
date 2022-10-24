@@ -1,0 +1,8 @@
+- name: privilege escalation
+  hosts: all
+  tasks: 
+    - name: installin git 
+      yum: 
+        name: git
+        state: latest
+      become: true
