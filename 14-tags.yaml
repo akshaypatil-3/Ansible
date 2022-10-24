@@ -1,0 +1,19 @@
+- name: playbook for tags
+  hosts: all
+  tasks: 
+    - name: print hello world for different envirnoment with tags
+      debug: 
+        msg: "hello world"
+      tags: [task1]
+
+    - name: print my name with tags
+      debug: 
+        msg: "akshay"
+      tags:
+          - task2
+
+    - name: print cloudblitz name
+      debug:
+        msg: "welcome to cloudblitz"
+      tags: 
+        - ap
