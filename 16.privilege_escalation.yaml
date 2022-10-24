@@ -6,3 +6,7 @@
         name: git
         state: latest
       become: true
+      
+# mention inside the configuration file ansible.cfg file
+# [privilege_escalation]
+#     become = true
