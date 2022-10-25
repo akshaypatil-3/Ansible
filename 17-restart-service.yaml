@@ -1,0 +1,6 @@
+- name: restart services and enable
+  hosts: all
+  tasks: 
+    yum: httpd
+    name: restarted
+    enabled: true
