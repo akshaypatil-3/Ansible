@@ -6,5 +6,6 @@
         path: /etc/httpd/conf/httpd.conf
         regix: "^Liston 80"     # regix is used to search perticular word
         line: "Liaton 8080"
+      become: true
 
 
