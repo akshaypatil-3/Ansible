@@ -1,0 +1,7 @@
+- name: unarchive in ansible
+  hosts: all
+  tasks: 
+    - name: download and extarct 
+      unarchive: 
+        src: "https://downloads.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz.asc"
+        dest: /opt

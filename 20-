@@ -1,0 +1,7 @@
+- name: example for filters
+  hosts: all  
+  tasks: 
+    - name: split the url
+      debug: 
+        msg: "{{https://downloads.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz.asc | urlspilt}}"
+    
